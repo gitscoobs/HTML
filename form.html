@@ -1,0 +1,136 @@
+<!doctype HTML>
+<html lang="en">
+
+<html>
+
+    <header>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="author" content="Nick S">
+            <meta name="description" conetent="This is my page">
+            <title>This is Nick's Form</title>
+            <link rel="icon" href="/Images/amogusmike.png" type=" imagex-icon">
+            <link rel="stylesheet" href="/main.css" type="text/css">  
+        
+        </head>
+
+    <h1>Form</h1>
+
+</header>
+
+<hr>
+
+<body id="top">
+<fieldset>
+<legend>Please Give me your Data</legend>
+    <form action="https://httpbin.org/get" method="get">
+
+        <!-- I think I could use line breaks instead of div for most of this section-->
+        
+        <div>
+        <label for="firstName">First Name:</label>
+        <input type="text" name="firstName" id="firstname" placeholder="John" autocomplete="on" required autofocus>
+        </div>
+        <div>
+        <label for="lastName">Last Name:</label>
+        <input type="text" name="lastName" id="lastname" placeholder="Doe" autocomplete="on" required>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="Secret Code" required>
+            </div>
+        <div>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" name="phone" id="phone" placeholder="5555555555" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+            </div>
+            <div>
+                <label for="decade">Favorite Decade:</label>
+                <input type="number" name="decade" id="decade" min="1900" max="2020" step="10" value="1980">
+            
+                </div>
+                <div>
+                    <label for="coffee">Favorite Coffee:</label>
+                    <select name="coffee" id="coffee">
+                        <optgroup label="Dunkin Made">
+                        <option value="Hot Coffee">Hot Coffee</option>
+                        <option value="Iced Coffee">Iced Coffee</option>
+                        
+                        <optgroup label="Home Made">
+                            <option value="Hot Coffee">Hot Coffee</option>
+                            <option value="Iced Coffee">Iced Coffee</option>
+                    </select>
+                </fieldset>
+                <Fieldset>
+                <legend>What is the best food?</legend>
+                <p>
+                <input type="radio" name="food" id="tacos" value="tacos">
+                <label for="tacos">Tacos</label>
+            </p>
+                
+            
+            <p>
+            <input type="radio" name="food" id="pizza" value="pizza">
+            <label for="pizza">Pizza</label>
+            </p>
+            
+        </Fieldset>
+
+        <Fieldset>
+            <legend>Which animals do you have?</legend>
+            <p>
+            <input type="checkbox" name="pet" id="cat" value="cat">
+            <label for="cat">Cat</label>
+        </p>
+            
+        
+        <p>
+        <input type="checkbox" name="pet" id="dog" value="dog">
+        <label for="Dog">Dog</label>
+        </p>
+        <p>
+            <input type="checkbox" name="pet" id="fish" value="fish">
+            <label for="fish">Fish</label>
+        </p>
+        
+    </Fieldset>
+
+    <fieldset>
+        <Legend>Write me something cool and not too mean.</Legend>
+        <label for="message">Your Message</label>
+        <br>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message..."></textarea>
+    </fieldset>
+    <br>
+    <button type="Submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+
+    <button type="reset">Reset</button>
+
+    </form>
+
+
+
+
+
+
+
+</body>
+
+<hr>
+
+<footer>
+
+    <nav>
+        <a href="/">Home</a> 
+    </nav>
+    
+    <nav>
+        <a href="/contact.html">Contact</a>
+    <nav>
+
+</footer>
+
+<a href="#top">Back to top</a>
+
+<p>&lt;&lt;&lt; Nick S. &copy; &gt;&gt;&gt;</p>
+
+</html>
